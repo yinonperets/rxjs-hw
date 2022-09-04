@@ -1,0 +1,23 @@
+<div *ngIf="user != undefined; else noUser">
+  <div class="text-center">
+    <p>
+      First Name: {{ user.firstName }}
+    </p>
+    <p>
+      Last Name: {{ user.lastName }}
+    </p>
+    <p>
+      Age: {{ user.age }}
+    </p>
+    <p>
+      Phone: {{ user.phone }}
+    </p>
+    <p>
+      email: {{ user.email }}
+    </p>
+  </div>
+</div>
+
+<ng-template #noUser>
+  <p>User is Undefined</p>
+</ng-template>
